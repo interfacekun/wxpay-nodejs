@@ -46,7 +46,7 @@ var data={out_trade_no:"123456781111111"};
 WXPayApi.closeorder(data).then((r)=>console.log(r.return_msg),(e)=>console.error(e));
 ```
 5.退款
-```javascriptjavascript
+```javascript
 var data={
         transaction_id:"",
         out_trade_no:"123456781111111",
