@@ -4,7 +4,7 @@
 npm install wxpay-nodejs --save
 ```
 ## 接口使用
-1. 接口配置
+1.接口配置
 ```
 import WXPayApi from 'wxpay-nodejs';
 
@@ -22,7 +22,7 @@ var mainConfig={
 WXPayApi.initialize(mainConfig);
 ```
 
-2. 统一下单
+2.统一下单
 ```
 var data={
     attach:"test",
@@ -35,17 +35,17 @@ var data={
 };
 WXPayApi.unifiedorder(data).then((r)=>console.log(r.return_msg),(e)=>console.error(e));
 ```
-3. 查询订单
+3.查询订单
 ```
 var data={out_trade_no:"123456781111111"};
 WXPayApi.orderquery(data).then((r)=>console.log(r.return_msg),(e)=>console.error(e));
 ```
-4. 关闭订单
+4.关闭订单
 ```
 var data={out_trade_no:"123456781111111"};
 WXPayApi.closeorder(data).then((r)=>console.log(r.return_msg),(e)=>console.error(e));
 ```
-5. 退款
+5.退款
 ```
 var data={
         transaction_id:"",
@@ -59,7 +59,7 @@ var data={
     };
 WXPayApi.refund(data).then((r)=>console.log(r.return_msg),(e)=>console.error(e));
 ```
-6. 查询退款
+6.查询退款
 ```
 var data={
         transaction_id:"",
