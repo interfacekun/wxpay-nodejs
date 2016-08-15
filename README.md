@@ -40,12 +40,12 @@ WXPayApi.unifiedorder(data).then((r)=>console.log(r.return_msg),(e)=>console.err
 var data={out_trade_no:"123456781111111"};
 WXPayApi.orderquery(data).then((r)=>console.log(r.return_msg),(e)=>console.error(e));
 ```
-3. 关闭订单
+4. 关闭订单
 ```
 var data={out_trade_no:"123456781111111"};
 WXPayApi.closeorder(data).then((r)=>console.log(r.return_msg),(e)=>console.error(e));
 ```
-4. 退款
+5. 退款
 ```
 var data={
         transaction_id:"",
@@ -59,7 +59,7 @@ var data={
     };
 WXPayApi.refund(data).then((r)=>console.log(r.return_msg),(e)=>console.error(e));
 ```
-5. 查询退款
+6. 查询退款
 ```
 var data={
         transaction_id:"",
